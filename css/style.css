@@ -1,0 +1,147 @@
+/*index.html的css*/
+
+/*轮播图*/
+/* 设置轮播图容器的最大高度 */
+.carousel {
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  10px 10px 10px rgba(190, 190, 190, 0.3);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 保持图片比例，裁剪超出部分 */
+}
+
+.carousel-inner {
+    height: 500px; /* 根据需要设置高度 */
+}
+
+
+/*网页背景*/
+body{
+    background-image:linear-gradient(60deg,#abecd6 0%, #fbed96 100%);
+}
+
+/*乌镇的正确打开方式*/
+.fancy-title {
+    font-family: '华文楷体', Times, serif;
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+    padding: 10px 20px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+/* 鼠标悬停效果 */
+.fancy-title:hover {
+    transform: scale(1.05);
+}
+
+.an {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #f02f3d, #f47e3c);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.an:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+.an:active {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transform: translateY(0);
+}
+.an:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.an:hover:before {
+    width: 100%;
+}
+.an::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.an:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -45%);
+}
+
+/*住宿指南 - 梦栖之地*/
+/* 卡片基本样式 */
+.card1 {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 平滑过渡效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 卡片图片样式 */
+.card1-img-top {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+
+/* 卡片悬停效果 */
+.card1:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card1:hover .card1-img-top {
+    transform: scale(1.1);
+}
+
+@font-face {
+    font-family: 'KuaiKanShiJieTi';
+    src: url('../PS/快看世界体（建议先保存，再下载）/kuaikanshijieti20231213.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.zt1 {
+    font-family: 'KuaiKanShiJieTi', sans-serif;
+    color: #da7154;
+    font-size: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: none;
+}
+
+.zt1:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #da7154, 0 0 20px #da7154, 0 0 30px #da7154, 0 0 40px #ff6a00;
+}

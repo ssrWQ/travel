@@ -1,0 +1,116 @@
+body, html {
+    margin: 0;
+    padding: 3% 0 0 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* 防止滚动条出现 */
+}
+.bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%); /* 居中视频 */
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.content-container {
+    position: relative;
+    overflow-y: auto;
+    height: 100vh;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/*卡片1*/
+.con1,.fr {
+    background-image:linear-gradient(60deg,#abecd6 0%, #fbed96 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hh,h1{
+    font-weight: bold;
+}
+h2{
+    border-left: #abecd6 solid 6px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: ghostwhite;
+}
+.msu{
+    font-family: '华文楷体', Times, serif;
+}
+/*选择框*/
+/* 重置select元素的默认样式 */
+.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: rgba(245, 245, 245, 0.67);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* 下拉箭头 */
+.form-control::after {
+    content: '\25BC';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+/* 鼠标悬停时改变样式 */
+.form-control:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* 隐藏默认的下拉箭头 */
+.form-control option {
+    background-color: #333;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'KuaiKanShiJieTi';
+    src: url('../PS/快看世界体（建议先保存，再下载）/kuaikanshijieti20231213.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.zt1 {
+    font-family: 'KuaiKanShiJieTi', sans-serif;
+    color: #da7154;
+    font-size: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: none;
+}
+
+.zt1:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #da7154, 0 0 20px #da7154, 0 0 30px #da7154, 0 0 40px #ff6a00;
+}

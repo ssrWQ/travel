@@ -1,0 +1,210 @@
+/* 自定义中国风样式 */
+body {
+    margin-top: 6%;
+    background: url("../img/水墨背景.jpg");
+    background-size: cover;
+}
+
+.navbar {
+    background: #cc3333;
+}
+
+.container-fluid.p-0[style] {
+    height: 300px; 
+    background-size: cover;
+    background-position: center;
+}
+
+.container.text-light.py-5 {
+    background: rgba(16, 104, 152, 0.4);
+    border-radius: 10px; 
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* 页脚样式 */
+footer.bg-dark.text-light {
+    background: #2c3e50; 
+}
+
+
+.bt1{
+    font-family: 华文行楷,serif;
+    color: #06436f;
+}
+
+.r2 {
+    position: relative;
+    font-family: 华文新魏, Times, serif;
+    color: #4a4a4a;
+    line-height: 1.8;
+}
+.p1::first-letter {
+    float: left;
+    font-size: 3em;
+    line-height: 1em;
+    margin-right: 10px;
+    color: #8b4513;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+}
+.p1 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+/*文字高亮*/
+.highlight-red {
+    color: #e54d42;
+}
+.highlight-blue {
+    color: #3c91e6;
+}
+.highlight-green {
+    color: #4caf50;
+}
+
+/*按钮*/
+.dialog-ok {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.go-button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.an,.go-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #f02f3d, #f47e3c);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.an,.go-button:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+.an,.go-button:active {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transform: translateY(0);
+}
+.an,.go-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.an,.go-button:hover:before {
+    width: 100%;
+}
+.an,.go-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.an,.go-button:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -45%);
+}
+
+/* 纵向导航菜单 */
+#verticalMenu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#verticalMenu ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+#verticalMenu li {
+    width: 100%;
+}
+
+#verticalMenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px; /
+    line-height: 2;
+    transition: background 0.3s ease;
+}
+
+#verticalMenu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#history, #culture, #features, #attractions {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+@font-face {
+    font-family: 'KuaiKanShiJieTi';
+    src: url('../PS/快看世界体（建议先保存，再下载）/kuaikanshijieti20231213.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.zt1 {
+    font-family: 'KuaiKanShiJieTi', sans-serif;
+    color: #108b9d;
+    font-size: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: none;
+}
+
+.zt1:hover {
+    color: #ffffff;
+    text-shadow:
+            0 0 5px #108b9d,
+            0 0 10px #108b9d,
+            0 0 15px #108b9d,
+            0 0 20px #ffffff;
+}

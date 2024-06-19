@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>舌尖上的乌镇x</title>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+</head>
+<style>
+    body{
+        margin-top: 6%;
+        background: url("img/背景2.jpg");
+        background-size: cover;
+    }
+    @font-face {
+        font-family: 'KuaiKanShiJieTi';
+        src: url('PS/快看世界体（建议先保存，再下载）/kuaikanshijieti20231213.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .zt1 {
+        font-family: 'KuaiKanShiJieTi', sans-serif;
+        color: #da7154;
+        font-size: 20px;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+        text-shadow: none;
+    }
+
+    .zt1:hover {
+        color: #ffffff;
+        text-shadow: 0 0 10px #da7154, 0 0 20px #da7154, 0 0 30px #da7154, 0 0 40px #ff6a00;
+    }
+    .card {
+        border: none;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .r1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+    .kapian1 {
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        margin: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .kapian1:hover {
+        transform: translateY(-10px);
+    }
+    h2 {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .kapian1 h2, {
+        background: -webkit-linear-gradient(45deg, #f02f3d, #f47e3c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .kapian1 p {
+        border-left: 3px solid #f02f3d;
+        padding-left: 10px;
+    }
+    .bg{
+        background-image:linear-gradient(0deg, rgba(253, 219, 146, 0.4) 0%, rgba(209, 253, 255, 0.4) 100%);
+        border-radius: 10px;
+    }
+    .an {
+        display: inline-block;
+        padding: 10px 30px;
+        margin: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(45deg, #f02f3d, #f47e3c);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+    .an:hover {
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        transform: translateY(-2px);
+    }
+    .an:active {
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        transform: translateY(0);
+    }
+    .an:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        z-index: -1;
+        transition: width 0.3s ease;
+    }
+    .an:hover:before {
+        width: 100%;
+    }
+    .an::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+    .an:hover::after {
+        opacity: 1;
+        transform: translate(-50%, -45%);
+    }
+</style>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: rgba(0, 0, 0, 0.5);">
+    <a class="navbar-brand" href="index.html" style="background: url('PS/logo设计2.png'); background-size: cover;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="zt1 mr-5 ml-5" href="Shuimo_Wuzhen.html">水墨乌镇</a>
+            </li>
+            <li class="nav-item">
+                <a class="zt1" href="eat.html">舌尖上的乌镇</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- 主要内容区域 -->
+<div class="container">
+    <div class="jumbotron text-center bg">
+        <h1 class="display-4" style="font-family:华文隶书,serif; color: #631216">美食推荐 - 舌尖上的乌镇</h1>
+        <p class="lead" style="font-family:楷体,serif;color: #8f1d22">舌尖上的乌镇，每一道佳肴都是水乡的味道，白水鱼的鲜美，定胜糕的香甜，让人回味无穷。</p>
+    </div>
+
+    <div class="row r1">
+        <div class="col-md-4 kapian1">
+            <h2>书生羊肉面</h2>
+            <p>推荐指数：⭐️⭐️⭐️</p>
+        </div>
+        <div class="col-md-4 kapian1">
+            <h2>锦记糕点铺</h2>
+            <p>推荐指数：⭐️⭐️⭐️</p>
+        </div>
+        <div class="col-md-4 kapian1">
+            <h2>桥里桥梅干菜烧饼</h2>
+            <p>推荐指数：⭐️⭐️⭐️</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-8">
+            <!-- 文章 -->
+            <div class="card mb-5">
+                <img src="img/乌镇美食1.jpg" class="card-img-top img1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">乌镇这家最近超火爆的餐厅🍴！好吃到破防了～</h5>
+                    <p class="card-text">要说最爱😍吃的乌镇特色土家菜！一定要非寻坞水宴餐厅🍴莫属！</p>
+                    <a href="#" class="btn btn-primary an">阅读更多</a>
+                </div>
+            </div>
+
+        <div class="card mb-5">
+        <img src="img/乌镇美食1.jpg" class="card-img-top img1" alt="...">
+        <div class="card-body">
+            <h5 class="card-title font-weight-bold">🌿乌镇美食 | 水岸边小店的魅力「默默的家」</h5>
+            <p class="card-text">乌镇风评很大的一家美食店
+                据说是黄磊老师推荐的小镇私房菜哦</p>
+            <a href="#" class="btn btn-primary an">阅读更多</a>
+        </div>
+    </div>
+
+    <div class="card mb-5">
+    <img src="img/茶.jpg" class="card-img-top img1" alt="...">
+    <div class="card-body">
+        <h5 class="card-title font-weight-bold">来乌镇一定不能错过这杯月桂龙井咖啡，好喝</h5>
+        <p class="card-text">月桂龙井拿铁好喝，配上小茶壶很有好看，而且茶壶还能带回去泡茶</p>
+        <a href="#" class="btn btn-primary an">阅读更多</a>
+    </div>
+</div>
+        </div>
+        <div class="col-md-4">
+            <!-- 侧边栏 -->
+            <div class="card bozhu">
+                <div class="card-header font-weight-bold">
+                    美食博主在乌镇都吃了些什么
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        1⃣️滋啦啦油煎铺<br>
+                        推荐指数：⭐️⭐️⭐️<br>
+                        萝卜丝饼💰3，外面脆脆的！里面是柔软的萝卜丝，咸味的，还不错～但是吃多几口会觉得有点油&咸，排队15分钟左右，可以试试的～<br>
+                        芹菜牛肉春卷💰5，也是油炸的，个人觉得一般，不太适合我的口味哈哈哈（忘记拍照了）<br>
+                        2⃣️桥里桥烧饼铺<br>
+                        推荐指数：⭐️⭐️⭐️⭐️⭐️<br>
+                        梅干菜烧饼💰8，我心中Top1的梅干菜烧饼！巨巨巨好吃！又薄又香又脆，8分钟才出一炉，每个人买到的烧饼都是热乎乎的，非常好吃～以前是6块钱的，现在涨价啦～每人限购2个，非常值得一吃！！<br>
+                        3⃣️薄荷老冰棍<br>
+                        推荐指数：⭐️⭐️⭐️⭐️⭐️<br>
+                        💰2一根的老冰棍，白糖薄荷味，夏天来一根真的很解暑～好像薄荷味的棒冰在江浙一带比较流行，但我是第一次吃到薄荷味的棒冰，超级惊艳的感觉哈哈哈哈～<br>
+                        4⃣️胜记糕点铺<br>
+                        推荐指数：⭐️⭐️⭐️⭐️<br>
+                        定胜糕💰3，来乌镇必须尝尝看这款小糕点～现蒸的，内馅是豆沙，糯糯甜甜的口感还不错👍🏻<br>
+                        肉松乌饭💰8，乌饭+榨菜粒+肉松，咸味的，松松软软挺不错的，但个人觉得价格高啦～<br>
+                        乌饭💰5，甜味的，有点像甜糯米饭的感觉，个人觉得一般哈哈哈<br>
+                        5⃣️79号民宿的家常菜<br>
+                        推荐指数：⭐️⭐️<br>
+                        酸汤鱼💰88，鱼很新鲜，汤里有番茄酸菜花椒，不辣，味道挺不错的～<br>
+                        小炒牛肉💰68，牛肉切成了条，加青椒和洋葱一起炒，蛮下饭的。<br>
+                        手撕包菜💰22，没有干辣椒的手撕包菜，适合广东人口味哈哈哈哈～<br>
+                        6⃣️古镇酱鸭铺<br>
+                        推荐指数：⭐️⭐️<br>
+                        古镇鸭脖💰10一根，偏甜味，感觉咸味不够，是冷的，口感还行，但是味道一般，不是很推荐～<br>
+                        7⃣️叙昌酱园<br>
+                        推荐指数：⭐️⭐️⭐️<br>
+                        酱鸭面💰25一碗，黄豆酱的味道，个人感觉味道偏咸，酱鸭味道还行，面的口感我个人觉得一般哈哈哈哈～
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<footer class="bg-dark text-light mt-5 py-3">
+    <div class="container text-center">
+        <p>版权所有 &copy; 2024 梦回乌镇</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

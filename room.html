@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>住宿指南 - 梦栖之地</title>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style02.css">
+</head>
+<body>
+<!-- 背景 -->
+<video playsinline autoplay muted loop class="bg-video">
+    <source src="img/视频背景.mp4" type="video/mp4">
+</video>
+<div class="content-container">
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: rgba(0, 0, 0, 0.5);">
+        <a class="navbar-brand" href="index.html" style="background: url('PS/logo设计2.png'); background-size: cover;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="zt1 mr-5 ml-5" href="Shuimo_Wuzhen.html">水墨乌镇</a>
+                </li>
+                <li class="nav-item">
+                    <a class="zt1" href="eat.html">舌尖上的乌镇</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 住宿指南内容 -->
+    <div class="container mt-4 con1">
+        <h1 style="font-family: 华文隶书,serif; font-weight: bold; color: #4f441e;">住宿指南 - 梦栖之地</h1>
+        <p>请选择您心仪的住宿类型，体验乌镇的独特魅力。</p>
+
+        <!-- 住宿类型列表 -->
+        <div id="accommodationDescription" class="list-group">
+            <!-- 乌镇民宿 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="1">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 msu">乌镇民宿</h5>
+                </div>
+                <p class="mb-1 msu">主打临水房，体验江南水乡的韵味。</p>
+                <small class="msu">优点：若有幸分配到29栋的2291号房，乌镇C位打卡点被你锁定！缺点：需提前两周预定，可能不隔音。</small>
+            </a>
+        </div>
+        <!-- 住宿类型列表，根据选择动态显示 -->
+        <div id="accommodations" class="list-group con1 d-none">
+            <!-- 乌镇民宿 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="1">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">乌镇民宿</h5>
+                </div>
+                <p class="mb-1 msu">主打临水房，体验江南水乡的韵味。</p>
+                <small class="msu">优点：若有幸分配到29栋的2291号房，乌镇C位打卡点被你锁定！缺点：需提前两周预定，可能不隔音。</small>
+            </a>
+            <!-- 堤上 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="2">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">堤上</h5>
+                </div>
+                <p class="mb-1">后起之秀，五星标准住宿体验。</p>
+                <small>优点：房间宽敞，免费游泳池和洗衣服务，有机会俯瞰乌镇景区。缺点：优惠套餐限暑假，不临水。</small>
+            </a>
+            <!-- 通安 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="3">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">通安</h5>
+                </div>
+                <p class="mb-1">典型的江南大户人家改建酒店。</p>
+                <small>优点：离景区大门近，多种风格套房，早餐丰盛。缺点：部分房间白天略吵。</small>
+            </a>
+            <!-- 枕水 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="4">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">枕水</h5>
+                </div>
+                <p class="mb-1">古色古香，江南庭院风格。</p>
+                <small>优点：恒温泳池，江南庭院风格。缺点：房型选择少，需升级。</small>
+            </a>
+            <!-- 水巷驿 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="5">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">水巷驿</h5>
+                </div>
+                <p class="mb-1">中西结合的复古风格。</p>
+                <small>优点：乌镇水墨画既视感。缺点：房间选择少。</small>
+            </a>
+            <!-- 水市客舍 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="6">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">水市客舍</h5>
+                </div>
+                <p class="mb-1">江南私家宅院韵味。</p>
+                <small>优点：离水市近，江南宅院风格。缺点：房间选择少。</small>
+            </a>
+            <!-- 昭明书舍 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="7">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">昭明书舍</h5>
+                </div>
+                <p class="mb-1">书卷气息的中式风格。</p>
+                <small>优点：双门禁标间，共享客厅区域。缺点：暂无。</small>
+            </a>
+            <!-- 望津里 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="8">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">望津里</h5>
+                </div>
+                <p class="mb-1">幽美庭院，闹中取静。</p>
+                <small>优点：翡翠漾西北岸，摇撸船终点站。缺点：价格稍贵。</small>
+            </a>
+            <!-- 盛庭行馆 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="9">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">盛庭行馆</h5>
+                </div>
+                <p class="mb-1">百年历史水乡豪宅改建。</p>
+                <small>优点：历史韵味浓厚，空间感与隐私感强。缺点：价格稍贵。</small>
+            </a>
+            <!-- 稻舍乡村酒店 -->
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="10">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">稻舍乡村酒店</h5>
+                </div>
+                <p class="mb-1">乡村旅游观光，适合亲子游。</p>
+                <small>优点：房间宽敞明亮，适合亲子游。缺点：离景区大门远，但有观光车。</small>
+            </a>
+        </div>
+    </div>
+
+    <!-- 登记住宿信息表单 -->
+    <div class="container mt-5">
+        <h2>登记住宿信息</h2>
+        <form class="fr">
+            <div class="form-group">
+                <label for="name" class="hh">姓名</label>
+                <input type="text" class="form-control" id="name" placeholder="请输入您的姓名">
+            </div>
+            <div class="form-group">
+                <label for="accommodationType" class="hh">住宿类型</label>
+                <select class="form-control" id="accommodationType">
+                    <option value="1">乌镇民宿</option>
+                    <option value="2">堤上</option>
+                    <option value="3">通安</option>
+                    <option value="4">枕水</option>
+                    <option value="5">水巷驿</option>
+                    <option value="6">水市客舍</option>
+                    <option value="7">昭明书舍</option>
+                    <option value="8">望津里</option>
+                    <option value="9">盛庭行馆</option>
+                    <option value="10">稻舍乡村酒店</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="age" class="hh">年龄</label>
+                <input type="number" class="form-control" id="age" placeholder="请输入您的年龄">
+            </div>
+
+            <div class="form-group">
+                <label class="hh">性别</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                    <label class="form-check-label hh" for="male" >男</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label hh" for="female">女</label>
+                </div>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="breakfast">
+                <label class="form-check-label hh" for="breakfast">是否需要早餐</label>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="specialTea">
+                <label class="form-check-label hh" for="specialTea">是否需要特色茶饮</label>
+            </div>
+
+            <div class="form-group">
+                <label for="checkInDate" class="hh">入驻时间</label>
+                <input type="date" class="form-control" id="checkInDate">
+            </div>
+
+            <button type="submit" class="btn btn-primary">提交</button>
+        </form>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-light mt-5 py-3">
+        <div class="container text-center">
+            <p>版权所有 &copy; 2024 梦回乌镇</p>
+        </div>
+    </footer>
+
+</div>
+
+
+<!-- 引入Bootstrap JS和jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        displayAccommodationInfo(1);
+
+        $('#accommodationType').on('change', function() {
+            var selectedId = $(this).val();
+            displayAccommodationInfo(selectedId);
+        });
+
+        // 表单提交逻辑
+        $('#accommodationForm').submit(function(e) {
+            e.preventDefault();
+            var name = $('#name').val();
+            var type = $('#accommodationType').val();
+            alert('提交了信息：\n姓名：' + name + '\n住宿类型：' + type);
+        });
+
+        // 显示对应住宿类型的介绍信息
+        function displayAccommodationInfo(id) {
+            $('#accommodationDescription').html('');
+            var accommodationInfo = $('#accommodations > [data-id="' + id + '"]');
+            if (accommodationInfo.length) {
+                $('#accommodationDescription').html(
+                    accommodationInfo.clone().html()
+                );
+            }
+        }
+    });
+</script>
+
+
+</body>
+<script>
+
+</script>
+</html>
